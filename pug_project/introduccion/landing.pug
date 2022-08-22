@@ -1,0 +1,34 @@
+-var titulo = "Subtitulo Principal"
+-var titulos = ["Titulo Principal","Subtitulo 1","Subtitulo 2"]
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet",href='css/ejercicio-pug.css')
+	body
+		header
+			h1 PlatziGames
+			h2 #{titulo}
+			a.boton Registro
+		section.intro
+			.intro__imagen: img(src="images/imagen.png")
+			.intro__contenido
+				h2 Titulo Principal
+				p 
+					| Lorem, ipsum dolor sit amet 
+					| consectetur adipisicing elit. 
+					| Consequatur nam ducimus 
+					| excepturi quia quasi 
+					| praesentium aspernatur 
+					| dignissimos autem est, 
+					| cumque voluptas minus amet 
+					| numquam aliquid deleniti 
+					| expedita illo obcaecati 
+					| architecto.
+					span Lorem ipsum dolor sit amet consectetur adipisicing.
+
+				a.boton Leer Mas
+
+
+		
