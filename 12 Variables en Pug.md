@@ -9,6 +9,12 @@ Por ejemplo, para un subtítulo podemos generar en pug de la siguiente manera:
 h2 #{titulo}
 ```
 
+Otras manera de declarar la variable sera insertar un `=` seguido de la variable, como por ejemplo.
+
+```pug
+-var subtitulo = "Subtitulo Principal"
+h2=titulo
+```
 ## Uso de Arreglos en Pug
 
 Ahora, si tenemos varios títulos, entonces podemos utilizar un arreglo en Javascript `-var titulos=["","",""]`, y hacer el llamado por cada elemento de acuerdo a su posición `#{titulos[0]}`, `#{titulos[1]}` y `#{titulos[2]}`.

@@ -10,9 +10,7 @@ mixin caja(imagen,titulo,contenido)
 
 doctype html
 html
-	head
-		meta(charset="UTF-8")
-		link(rel="stylesheet",href='css/ejercicio-pug.css')
+	include ./includes/head.pug
 	body
 		header
 			h1 PlatziGames
@@ -44,5 +42,5 @@ html
 			each titulo in titulos
 				+caja("imagen.png",titulo,"Contenido 1")
 
-
+		include ./includes/footer.pug
 		
